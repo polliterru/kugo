@@ -7,17 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link type="image/favicon" href="./img/favicon.ico" rel="shortcut icon">
   <title>Kugoo</title>
 </head>
 
 <body>
 
-  <head>
+  <header>
     <nav class="navbar">
-      <div class="container">
-        <div class="header-nav-wrapper">
+      <div class="header-nav-wrapper">
+        <div class="container header-nav-wrapper-container">
           <div class="header-nav-menu-wrapper">
-            <ul class="header-nav">
+            <ul class="header-nav js-header-nav">
               <li class="header-nav-item">
                 <a href="#!" class="header-nav-link">Сервис</a>
               </li>
@@ -26,6 +27,11 @@
               </li>
               <li class="header-nav-item">
                 <a href="#!" class="header-nav-link">Заказать звонок</a>
+              </li>
+              <li class="header-nav-close js-header-nav-close">
+                <svg class="burger-close">
+                  <use href="./img/sprite.svg#burger_close"></use>
+                </svg>
               </li>
             </ul>
             <div class="header-nav-social">
@@ -45,18 +51,28 @@
                 </svg>
               </a>
             </div>
+
           </div>
           <div class="header-phone">
             <a href="tel:+78005055461" class="header-phone-link">+7 (800) 505-54-61</a>
           </div>
+          <div class="burger-menu js-burger-menu">
+            <svg class="burger-icon">
+              <use href="./img/sprite.svg#burger_menu"></use>
+            </svg>
+          </div>
         </div>
+      </div>
+      <div class="container">
         <div class="search">
-          <p class="title logo">KUGOO</p>
+          <a href="#!" class="logo-link">
+            <h2 class="title logo">KUGOO</h2>
+          </a>
           <button class="button search-button">
             <svg class="button-burger-icon">
               <use href="./img/sprite.svg#burger"></use>
             </svg>
-            <p class="button-burger-text">Каталог</p>
+            Каталог
           </button>
           <form action="#" class="search-form">
             <div class="search-wrapper">
@@ -95,7 +111,7 @@
         </div>
       </div>
     </nav>
-  </head>
+  </header>
 
   <section class="section main">
     <div class="main-img">
@@ -130,7 +146,7 @@
               <p class="main-content-element-text">Проверите лучшие самокаты в деле</p>
             </li>
           </ul>
-          <button class="button-light main-button">Записаться</button>
+          <button class="button-light main-button js-open-modal" data-modal-class="modal">Записаться</button>
         </div>
       </div>
     </div>
@@ -170,8 +186,8 @@
           </ul>
           <picture class="promo-block1-img">
             <source type="image/webp" srcset="img/promo-block1.webp">
-            <source type="image/jpg" srcset="img/promo-block1.jpg">
-            <img src="./img/promo-block1.jpg" alt="Картинка промо блок">
+            <source type="image/png" srcset="img/promo-block1.png">
+            <img src="./img/promo-block1.png" alt="Картинка промо блок">
           </picture>
         </div>
 
@@ -221,8 +237,8 @@
       </div>
       <picture class="promo-block-2-img">
         <source type="image/webp" srcset="img/promo-block2.webp">
-        <source type="image/jpg" srcset="img/promo-block2.jpg">
-        <img src="./img/promo-block2.jpg" alt="Картинка промо блок">
+        <source type="image/png" srcset="img/promo-block2.png">
+        <img src="./img/promo-block2.png" alt="Картинка промо блок">
       </picture>
     </div>
   </section>
@@ -234,8 +250,8 @@
         <div class="product-card">
           <picture class="product-card-img">
             <source type="image/webp" srcset="img/scooter.webp">
-            <source type="image/jpg" srcset="img/scooter.jpg">
-            <img src="./img/scooter.jpg" alt="Картинка промо блок">
+            <source type="image/png" srcset="img/scooter.png">
+            <img src="./img/scooter.png" alt="Картинка промо блок">
           </picture>
           <div class="product-card-top">
             <p class="marker marker-hit">ХИТ</p>
@@ -279,12 +295,12 @@
                 <p class="price-new">29 900 ₽</p>
               </div>
               <div class="price-block-icons">
-                <a href="!#" class="price-block-icon-link">
+                <a href="#!" class="price-block-icon-link">
                   <svg class="price-block-icon">
                     <use href="./img/sprite.svg#shopping"></use>
                   </svg>
                 </a>
-                <a href="!#" class="price-block-icon-link">
+                <a href="#!" class="price-block-icon-link">
                   <svg class="price-block-icon">
                     <use href="./img/sprite.svg#heart"></use>
                   </svg>
@@ -297,8 +313,8 @@
         <div class="product-card">
           <picture class="product-card-img">
             <source type="image/webp" srcset="img/scooter.webp">
-            <source type="image/jpg" srcset="img/scooter.jpg">
-            <img src="./img/scooter.jpg" alt="Картинка промо блок">
+            <source type="image/png" srcset="img/scooter.png">
+            <img src="./img/scooter.png" alt="Картинка промо блок">
           </picture>
           <div class="product-card-top">
             <p class="marker marker-new">Новинка</p>
@@ -342,12 +358,12 @@
                 <p class="price-new">29 900 ₽</p>
               </div>
               <div class="price-block-icons">
-                <a href="!#" class="price-block-icon-link">
+                <a href="#!" class="price-block-icon-link">
                   <svg class="price-block-icon">
                     <use href="./img/sprite.svg#shopping"></use>
                   </svg>
                 </a>
-                <a href="!#" class="price-block-icon-link">
+                <a href="#!" class="price-block-icon-link">
                   <svg class="price-block-icon">
                     <use href="./img/sprite.svg#heart"></use>
                   </svg>
@@ -360,8 +376,8 @@
         <div class="product-card">
           <picture class="product-card-img">
             <source type="image/webp" srcset="img/scooter.webp">
-            <source type="image/jpg" srcset="img/scooter.jpg">
-            <img src="./img/scooter.jpg" alt="Картинка промо блок">
+            <source type="image/png" srcset="img/scooter.png">
+            <img src="./img/scooter.png" alt="Картинка промо блок">
           </picture>
           <div class="product-card-top">
             <p class="marker marker-hit">ХИТ</p>
@@ -405,12 +421,12 @@
                 <p class="price-new">29 900 ₽</p>
               </div>
               <div class="price-block-icons">
-                <a href="!#" class="price-block-icon-link">
+                <a href="#!" class="price-block-icon-link">
                   <svg class="price-block-icon">
                     <use href="./img/sprite.svg#shopping"></use>
                   </svg>
                 </a>
-                <a href="!#" class="price-block-icon-link">
+                <a href="#!" class="price-block-icon-link">
                   <svg class="price-block-icon">
                     <use href="./img/sprite.svg#heart"></use>
                   </svg>
@@ -423,8 +439,8 @@
         <div class="product-card">
           <picture class="product-card-img">
             <source type="image/webp" srcset="img/scooter.webp">
-            <source type="image/jpg" srcset="img/scooter.jpg">
-            <img src="./img/scooter.jpg" alt="Картинка промо блок">
+            <source type="image/png" srcset="img/scooter.png">
+            <img src="./img/scooter.png" alt="Картинка промо блок">
           </picture>
           <div class="product-card-top">
             <p class="marker marker-new">Новинка</p>
@@ -468,12 +484,12 @@
                 <p class="price-new">29 900 ₽</p>
               </div>
               <div class="price-block-icons">
-                <a href="!#" class="price-block-icon-link">
+                <a href="#!" class="price-block-icon-link">
                   <svg class="price-block-icon">
                     <use href="./img/sprite.svg#shopping"></use>
                   </svg>
                 </a>
-                <a href="!#" class="price-block-icon-link">
+                <a href="#!" class="price-block-icon-link">
                   <svg class="price-block-icon">
                     <use href="./img/sprite.svg#heart"></use>
                   </svg>
@@ -492,8 +508,8 @@
       <div class="container cta">
         <picture class="cta-img">
           <source type="image/webp" srcset="img/woman.webp">
-          <source type="image/jpg" srcset="img/woman.jpg">
-          <img src="./img/woman.jpg" alt="cta">
+          <source type="image/png" srcset="img/woman.png">
+          <img src="./img/woman.png" alt="cta">
         </picture>
         <div class="cta-content">
           <h2 class="title cta-title">Нет нужной модели, которую хотите протестировать?</h2>
@@ -501,7 +517,7 @@
           <div class="cta-form-wrapper">
             <form action="#" class="cta-form">
               <div class="input-group">
-                <input type="tel" class="input-user-phone" placeholder="+7 (___) __ - __ - __">
+                <input class="input-user-phone" placeholder="+7 (___) __ - __ - __">
               </div>
             </form>
             <button class="button cta-button">Оставить заявку на тест-драйв</button>
@@ -522,13 +538,13 @@
     <div class="cta-email-bg">
       <div class="container">
         <div class="cta-email-wrapper">
-          <p class="cta-email-text">
+          <h2 class="title-size-M cta-email-text">
             Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты
-          </p>
+          </h2>
           <div class="footer-input-form">
-            <div class="cta-email-input-group">
-              <input type="email" class="input-email" placeholder="Введите Ваш email">
-            </div>
+
+            <input type="email" class="input-email" placeholder="Введите Ваш email">
+
             <button class="button-light cta-email-button">Подписаться</button>
           </div>
         </div>
@@ -540,54 +556,56 @@
     <div class="footer-bg">
       <div class="container">
         <div class="footer-top">
-          <div class="footer-top-list-wrapper">
-            <h3 class="title-size-M footer-top-title">Каталог товаров</h3>
-            <ul class="footer-top-list-catalog">
-              <li class="footer-top-item">
-                <a class="footer-top-item-link" href="!#">Электросамокаты</a>
-              </li>
-              <li class="footer-top-item">
-                <a class="footer-top-item-link" href="!#">Электроскутеры</a>
-              </li>
-              <li class="footer-top-item">
-                <a class="footer-top-item-link" href="!#">Электровелосипеды</a>
-              </li>
-              <li class="footer-top-item">
-                <a class="footer-top-item-link" href="!#">Электровелосипеды</a>
-              </li>
-            </ul>
+          <div class="footer-top-list-content">
+            <div class="footer-top-list-wrapper">
+              <h3 class="title-size-S footer-top-title">Каталог товаров</h3>
+              <ul class="footer-top-list-catalog">
+                <li class="footer-top-item">
+                  <a class="footer-top-item-link" href="#!">Электросамокаты</a>
+                </li>
+                <li class="footer-top-item">
+                  <a class="footer-top-item-link" href="#!">Электроскутеры</a>
+                </li>
+                <li class="footer-top-item">
+                  <a class="footer-top-item-link" href="#!">Электровелосипеды</a>
+                </li>
+                <li class="footer-top-item">
+                  <a class="footer-top-item-link" href="#!">Электровелосипеды</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-top-list-wrapper">
+              <h3 class="title-size-S footer-top-title">Покупателям</h3>
+              <ul class="footer-top-list-buyer">
+                <li class="footer-top-item">
+                  <a class="footer-top-item-link" href="#!">Сервисный центр</a>  
+                </li>
+                <li class="footer-top-item">
+                  <a class="footer-top-item-link" href="#!">Доставка и оплата</a>  
+                </li>
+                <li class="footer-top-item">
+                  <a class="footer-top-item-link" href="#!">Рассрочка</a>  
+                </li>
+                <li class="footer-top-item">
+                  <a class="footer-top-item-link" href="#!">Тест-драйв</a>  
+                </li>
+                <li class="footer-top-item">
+                  <a class="footer-top-item-link" href="#!">Блог</a>  
+                </li>
+                <li class="footer-top-item">
+                  <a class="footer-top-item-link" href="#!">Сотрудничество</a>  
+                </li>
+                <li class="footer-top-item">
+                  <a class="footer-top-item-link" href="#!">Контакты</a>  
+                </li>
+                <li class="footer-top-item">
+                  <a class="footer-top-item-link" href="#!">Акции</a>  
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="footer-top-list-wrapper">
-            <h3 class="title-size-M footer-top-title">Покупателям</h3>
-            <ul class="footer-top-list-buyer">
-              <li class="footer-top-item">
-                <a class="footer-top-item-link" href="!#">Сервисный центр</a>  
-              </li>
-              <li class="footer-top-item">
-                <a class="footer-top-item-link" href="!#">Доставка и оплата</a>  
-              </li>
-              <li class="footer-top-item">
-                <a class="footer-top-item-link" href="!#">Рассрочка</a>  
-              </li>
-              <li class="footer-top-item">
-                <a class="footer-top-item-link" href="!#">Тест-драйв</a>  
-              </li>
-              <li class="footer-top-item">
-                <a class="footer-top-item-link" href="!#">Блог</a>  
-              </li>
-              <li class="footer-top-item">
-                <a class="footer-top-item-link" href="!#">Сотрудничество</a>  
-              </li>
-              <li class="footer-top-item">
-                <a class="footer-top-item-link" href="!#">Контакты</a>  
-              </li>
-              <li class="footer-top-item">
-                <a class="footer-top-item-link" href="!#">Акции</a>  
-              </li>
-            </ul>
-          </div>
-          <div class="footer-top-list-wrapper">
-            <h3 class="title-size-M footer-top-title">Контакты</h3>
+            <h3 class="title-size-S footer-top-title">Контакты</h3>
             <div class="footer-top-contact-wrapper">
               <div class="footer-top-contact">
                 <span class="footer-phone-description">Call-центр</span>
@@ -604,11 +622,171 @@
           <a href="#!" class="footer-call-link">Заказать звонок</a>
         </div>
         <div class="footer-social">
-          <h2 class="title">Kugoo</h2>
+          <div class="footer-social-wrapper">
+            <a href="#!" class="logo-link">
+              <h2 class="title footer-logo">Kugoo</h2>
+            </a>
+            <div class="footer-social-store">
+              <picture class="store-icon">
+                <source type="image/webp" srcset="img/Badge-google.webp">
+                <source type="image/png" srcset="img/Badge-google.png">
+                <img src="./img/Badge-google.png" alt="cta">
+              </picture>
+              <picture class="store-icon">
+                <source type="image/webp" srcset="img/Badge-apple.webp">
+                <source type="image/png" srcset="img/Badge-apple.png">
+                <img src="./img/Badge-apple.png" alt="cta">
+              </picture>
+            </div>
+          </div>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="#!" class="footer-social-link">
+                <svg class="footer-social-icon">
+                  <use href="./img/sprite.svg#vk"></use>
+                </svg>
+                <div class="footer-social-text-wrapper">
+                  <p class="footer-social-text">Вконтакте</p>
+                  <span>3 300</span>
+                </div>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#!" class="footer-social-link">
+                <svg class="footer-social-icon">
+                  <use href="./img/sprite.svg#youtube"></use>
+                </svg>
+                <div class="footer-social-text-wrapper">
+                  <p class="footer-social-text">YouTube</p>
+                  <span>3 603</span>
+                </div>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#!" class="footer-social-link">
+                <svg class="footer-social-icon">
+                  <use href="./img/sprite.svg#telegram"></use>
+                </svg>
+                <div class="footer-social-text-wrapper">
+                  <p class="footer-social-text">Telegram</p>
+                  <span>432</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-bottom-info-block">
+            <li class="footer-bottom-info-block-item">
+              <a href="#!" class="footer-bottom-info-block-link">Реквизиты</a>
+            </li>
+            <li class="footer-bottom-info-block-item">
+              <a href="#!" class="footer-bottom-info-block-link">Политика конфиденциальности</a>
+            </li>
+          </ul>
+          <div class="footer-bottom-program-block-wrapper">
+            <ul class="footer-bottom-program-block">
+              <li class="footer-bottom-program-block-icons-item">
+                <svg class="icon-google-pay">
+                  <use href="./img/sprite.svg#GooglePay"></use>
+                </svg>
+              </li>
+              <li class="footer-bottom-program-block-icons-item">
+                <svg class="icon-apple-pay">
+                  <use href="./img/sprite.svg#ApplePay"></use>
+                </svg>
+              </li>
+              <li class="footer-bottom-program-block-icons-item">
+                <svg class="icon-visa">
+                  <use href="./img/sprite.svg#visa"></use>
+                </svg>
+              </li>
+              <li class="footer-bottom-program-block-icons-item">
+                <svg class="icon-mastercard">
+                  <use href="./img/sprite.svg#Mastercard"></use>
+                </svg>
+              </li>
+              <li class="footer-bottom-program-block-icons-item">
+                <svg class="icon-maestro">
+                  <use href="./img/sprite.svg#Maestro"></use>
+                </svg>
+              </li>
+              <li class="footer-bottom-program-block-icons-item">
+                <svg class="icon-webmoney">
+                  <use href="./img/sprite.svg#Webmoney"></use>
+                </svg>
+              </li>
+              <li class="footer-bottom-program-block-icons-item">
+                <svg class="icon-qiwi">
+                  <use href="./img/sprite.svg#Qiwi"></use>
+                </svg>
+              </li>
+            </ul>
+            <div class="chat-wrapper">
+              <p class="chat-text">Online чат:</p>
+              <ul class="chat">
+                <li class="chat-item">
+                  <a href="#!" class="chat-link">
+                    <svg class="icon-chat">
+                      <use href="./img/sprite.svg#viber"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chat-item">
+                  <a href="#!" class="chat-link">
+                    <svg class="icon-chat">
+                      <use href="./img/sprite.svg#whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chat-item">
+                  <a href="#!" class="chat-link">
+                    <svg class="icon-chat">
+                      <use href="./img/sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="modal-overlay js-close-modal"></div>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <h2 class="title modal-title">Запишитесь на&nbsp;тест-драйв электросамоката</h2>
+        <p class="modal-text">и подберите модель для себя</p>
+        <p class="modal-cta">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
+        <form action="#!" class="mogal-form">
+          <label class="input-group-label" >Как с вами удобнее связаться?</label>
+          <input type="tel" id="modal-user-phone" class="modal-input-user-phone" placeholder="+7 (___) __ - __ - __">
+        </form>
+        <button class="button modal-button">Оформить предзаказ</button>
+        <div class="checkboxes-item">
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input"/>
+            <span class="checkbox-checkmark modal-checkbox-checkmark"></span>
+            <span class="checkbox-body">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и политикой конфиденциальности</span>
+          </label>
+        </div>
+      </div>
+      <picture class="modal-img">
+        <source type="image/webp" srcset="img/mogal-img.webp">
+        <source type="image/png" srcset="img/mogal-img.png">
+        <img src="./img/mogal-img.png" alt="девушка на скутере">
+      </picture>
+      <button class="modal-close js-close-modal">
+        <svg class="modal-close-button">
+          <use href="./img/sprite.svg#modal-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
 
   <script src="./js/main.js"></script>
 </body>
